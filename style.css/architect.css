@@ -194,6 +194,15 @@ based on this we can calculate like 45px= almost 3 rem. */
   height: 171px;
   background-color: #ffffff;
 }
+.footer {
+  max-width: 1440px;
+  height: 100px;
+  background-color: antiquewhite;
+  margin-top: 130px;
+  padding: 39px 410px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
 
 /* Responsive WEb design for mobile*/
 @media screen and (max-width: 576px) {
@@ -223,6 +232,10 @@ based on this we can calculate like 45px= almost 3 rem. */
     margin-top: 20px;
     margin-left: 20px;
   }
+  .footer {
+    margin-top: 30px;
+    padding: 20px 20px;
+  }
 }
 
 /* Responsive for medium device WEb design */
@@ -239,5 +252,9 @@ based on this we can calculate like 45px= almost 3 rem. */
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     justify-items: center;
+  }
+  .footer {
+    margin-top: 30px;
+    padding: 20px 20px;
   }
 }
