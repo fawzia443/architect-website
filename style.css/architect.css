@@ -120,6 +120,9 @@ based on this we can calculate like 45px= almost 3 rem. */
 .feature-title {
   font-size: 2.8rem;
 }
+.feature-title-f {
+  font-size: 1.4rem;
+}
 #quick-list {
   font-weight: 700;
 }
@@ -168,12 +171,36 @@ based on this we can calculate like 45px= almost 3 rem. */
 .sponsor-companies img {
   filter: grayscale(100%);
 }
+/* Feature section related Design */
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -77px;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+  /* max-width: 345px;
+  height: 200px; */
+  color: #ffffff;
+}
+.featured-side-banner img {
+  width: 100%;
+}
+.feature-card {
+  width: 586px;
+  height: 171px;
+  background-color: #ffffff;
+}
 
-/* Responsive WEb design */
+/* Responsive WEb design for mobile*/
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
-  .teams {
+  .teams,
+  .feature {
     flex-direction: column;
   }
   .teams-image-container,
@@ -192,6 +219,10 @@ based on this we can calculate like 45px= almost 3 rem. */
   .our-features {
     margin-left: 20px;
   }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 /* Responsive for medium device WEb design */
@@ -202,10 +233,11 @@ based on this we can calculate like 45px= almost 3 rem. */
   .our-features {
     margin-left: 50px auto;
   }
-}
-.sponsor-companies,
-.facts-container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  justify-items: center;
+
+  .sponsor-companies,
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
 }
